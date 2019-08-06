@@ -324,6 +324,51 @@
           "label": true
         }
       ]
+    },
+    {
+      "id": "4",
+      "name": "RadarChart",
+      "type": "RadarChart",
+      "hide": true,
+      "radars": [
+        {
+          "id": "1",
+          "data": [
+            {
+              "name": "Group A",
+              "value": 2400
+            },
+            {
+              "name": "Group B",
+              "value": 4567
+            },
+            {
+              "name": "Group C",
+              "value": 1398
+            },
+            {
+              "name": "Group D",
+              "value": 9800
+            },
+            {
+              "name": "Group E",
+              "value": 3908
+            },
+            {
+              "name": "Group F",
+              "value": 4800
+            }
+          ],
+          "dataKey": "value",
+          "nameKey": "name",
+          "cx": "50%",
+          "cy": "50%",
+          "innerRadius": 60,
+          "outerRadius": 70,
+          "fill": "#82ca9d",
+          "label": true
+        }
+      ]
     }
   ]
 }
