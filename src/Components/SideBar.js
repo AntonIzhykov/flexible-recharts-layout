@@ -20,17 +20,17 @@ class SideBar extends React.Component {
             {incomingCharts.map(chart => (
               <div key={chart.id} className="line">
                 {chart.name}
-                <button className="btn" onClick={handleToggleChart(chart.id)}>
+                <button className={`${chart.hide ? 'bg-show' : 'bg-hide'} btn`} onClick={handleToggleChart(chart.id)}>
                   {`${chart.hide ? 'Show' : 'Hide'}`}
                 </button>
               </div>
             ))}
           </div>
           <div className="d-flex justify-content-between">
-            <button className="btn" onClick={showAllCharts}>
+            <button className="btn bg-show" onClick={showAllCharts}>
               Show all
             </button>
-            <button className="btn" onClick={hideAllCharts}>
+            <button className="btn bg-hide" onClick={hideAllCharts}>
               Hide all
             </button>
           </div>

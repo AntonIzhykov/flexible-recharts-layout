@@ -6,6 +6,8 @@ $golden-yellow: #fedd00;
 $gainsboro: #d4d9e2;
 $glitter: #e5e9f0;
 $ghost-white: #fafbfd;
+$show: rgba(0, 128, 0, 0.5);
+$hide: rgba(255, 0, 0, 0.5);
 
 // Set some defaults colors
 $primary: $gainsboro;
@@ -20,7 +22,9 @@ $theme-colors: map-merge(
     'primary': $primary,
     'yellow': $golden-yellow,
     'secondary': $glitter,
-    'error': $error
+    'error': $error,
+    'hide': $hide,
+    'show': $show
   ),
   $theme-colors
 );
@@ -203,13 +207,6 @@ $container-xl-max-widths: (
 
 // Modals
 $modal-md: 680px !default;
-
-// Use make-container-max-widths Mixin to generate new container's max widths and breakpoints
-/*
-  .container-xl {
-    @include make-container-max-widths($container-xl-max-widths);
-  }
-*/
 
 // Set some body defaults
 $body-bg: #fff;
