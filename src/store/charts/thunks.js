@@ -7,5 +7,5 @@ export const handleIncomingDataGetting = () => dispatch => {
     .then(incomingData => {
       dispatch(getIncomingDataSuccess(incomingData.default));
     })
-    .catch(({ message }) => dispatch(getIncomingDataError(message)))
+    .catch(({ message }) => dispatch(getIncomingDataError(message)));
 };

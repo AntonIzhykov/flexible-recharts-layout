@@ -4,10 +4,12 @@
       "id": "0",
       "name": "AreaChart",
       "type": "AreaChart",
+      "className": "bg-dark text-white",
       "hide": false,
       "toolTip": true,
       "cartesianGrid": {
-        "strokeDasharray": "3 3"
+        "strokeDasharray": "3 3",
+        "stroke": "green"
       },
       "legend": {
         "align": "left",
@@ -19,14 +21,15 @@
           "id": "1",
           "type": "monotone",
           "dataKey": "like",
-          "fill": "yellow",
-          "stroke": "#8884d8",
+          "stroke": "white",
+          "fill": "url(#colorLike)",
           "fillOpacity": 1,
           "children": [
             {
               "labelList": {
                 "dataKey": "like",
                 "position": "bottom",
+                "stroke": "gray",
                 "angle": 90
               }
             }
@@ -35,11 +38,13 @@
         {
           "id": "2",
           "dataKey": "dislike",
-          "fill": "red",
+          "type": "monotone",
+          "fill": "url(#colorDislike)",
           "children": [
             {
               "labelList": {
                 "dataKey": "dislike",
+                "stroke": "gray",
                 "position": "top"
               }
             }
@@ -90,6 +95,7 @@
       "type": "BarChart",
       "hide": false,
       "toolTip": true,
+      "className": "bg-primary",
       "cartesianGrid": {
         "strokeDasharray": "3 3"
       },
@@ -99,13 +105,6 @@
           "value": "Days",
           "position": "insideBottomRight",
           "offset": 4
-        }
-      },
-      "yAxis": {
-        "label": {
-          "value": "Number of likes/dislikes",
-          "angle": -90,
-          "position": "insideBottomLeft"
         }
       },
       "legend": {
@@ -280,6 +279,7 @@
       "id": "3",
       "name": "PieChart",
       "type": "PieChart",
+      "className": "bg-info",
       "hide": false,
       "margin": {
         "top": 7,
@@ -288,41 +288,6 @@
       "pies": [
         {
           "id": "1",
-          "data": [
-            {
-              "name": "Group A",
-              "value": 400
-            },
-            {
-              "name": "Group B",
-              "value": 300
-            },
-            {
-              "name": "Group C",
-              "value": 300
-            },
-            {
-              "name": "Group D",
-              "value": 200
-            },
-            {
-              "name": "Group E",
-              "value": 278
-            },
-            {
-              "name": "Group F",
-              "value": 189
-            }
-          ],
-          "dataKey": "value",
-          "nameKey": "name",
-          "cx": "50%",
-          "cy": "50%",
-          "outerRadius": 50,
-          "fill": "#8884d8"
-        },
-        {
-          "id": "2",
           "data": [
             {
               "name": "Group A",

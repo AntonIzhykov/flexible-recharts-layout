@@ -11,10 +11,9 @@ const store = configureStore();
 
 ReactDOM.render(
   <Provider store={store}>
-    <ContentWrapper/>
+    <ContentWrapper />
   </Provider>,
   document.getElementById('root')
 );
 
 serviceWorker.unregister();
-

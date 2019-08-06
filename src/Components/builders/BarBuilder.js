@@ -40,13 +40,13 @@ export default class BarBuilder extends Component {
         {legend && <Legend {...legend} />}
         {brush && <Brush {...brush} />}
         {bars &&
-        bars.map((bar, index) => {
-          return (
-            <Bar key={index} {...bar}>
-              {bar.children && bar.children.map((child, index) => buildChildren(child, index))}
-            </Bar>
-          );
-        })}
+          bars.map((bar, index) => {
+            return (
+              <Bar key={index} {...bar}>
+                {bar.children && bar.children.map((child, index) => buildChildren(child, index))}
+              </Bar>
+            );
+          })}
       </BarChart>
     );
   }

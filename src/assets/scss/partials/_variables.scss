@@ -8,8 +8,8 @@ $glitter: #e5e9f0;
 $ghost-white: #fafbfd;
 
 // Set some defaults colors
-$primary: $dark-lava;
-$secondary: $gainsboro;
+$primary: $gainsboro;
+$secondary: $dark-lava;
 $active: #6c6d6e;
 $error: #fe5f55;
 
@@ -20,7 +20,7 @@ $theme-colors: map-merge(
     'primary': $primary,
     'yellow': $golden-yellow,
     'secondary': $glitter,
-     'error': $error
+    'error': $error
   ),
   $theme-colors
 );
@@ -213,7 +213,7 @@ $modal-md: 680px !default;
 
 // Set some body defaults
 $body-bg: #fff;
-$body-color: $primary;
+$body-color: $dark-lava;
 $border-radius-base: 3px;
 
 // Set some links defaults
