@@ -1,0 +1,364 @@
+{
+  "charts": [
+    {
+      "id": "0",
+      "name": "AreaChart",
+      "type": "AreaChart",
+      "hide": false,
+      "toolTip": true,
+      "cartesianGrid": {
+        "strokeDasharray": "3 3"
+      },
+      "legend": {
+        "align": "left",
+        "verticalAlign": "middle",
+        "layout": "vertical"
+      },
+      "areas": [
+        {
+          "id": "1",
+          "type": "monotone",
+          "dataKey": "like",
+          "fill": "yellow",
+          "stroke": "#8884d8",
+          "fillOpacity": 1,
+          "children": [
+            {
+              "labelList": {
+                "dataKey": "like",
+                "position": "bottom",
+                "angle": 90
+              }
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "dataKey": "dislike",
+          "fill": "red",
+          "children": [
+            {
+              "labelList": {
+                "dataKey": "dislike",
+                "position": "top"
+              }
+            }
+          ]
+        }
+      ],
+      "data": [
+        {
+          "day": 1,
+          "like": 4000,
+          "dislike": 2400
+        },
+        {
+          "day": 1,
+          "like": 3000,
+          "dislike": 1398
+        },
+        {
+          "day": 3,
+          "like": 2000,
+          "dislike": 9800
+        },
+        {
+          "day": 4,
+          "like": 2780,
+          "dislike": 3908
+        },
+        {
+          "day": 5,
+          "like": 1890,
+          "dislike": 4800
+        },
+        {
+          "day": 6,
+          "like": 2390,
+          "dislike": 3800
+        },
+        {
+          "day": 7,
+          "like": 3490,
+          "dislike": 4300
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "name": "BarChart",
+      "type": "BarChart",
+      "hide": false,
+      "toolTip": true,
+      "cartesianGrid": {
+        "strokeDasharray": "3 3"
+      },
+      "xAxis": {
+        "dataKey": "day",
+        "label": {
+          "value": "Days",
+          "position": "insideBottomRight",
+          "offset": 4
+        }
+      },
+      "yAxis": {
+        "label": {
+          "value": "Number of likes/dislikes",
+          "angle": -90,
+          "position": "insideBottomLeft"
+        }
+      },
+      "legend": {
+        "align": "left",
+        "verticalAlign": "middle",
+        "layout": "vertical"
+      },
+      "brush": {
+        "dataKey": "day",
+        "height": 20,
+        "stroke": "#000",
+        "startIndex": 0,
+        "endIndex": 6
+      },
+      "bars": [
+        {
+          "id": "1",
+          "dataKey": "like",
+          "fill": "yellow",
+          "children": [
+            {
+              "labelList": {
+                "dataKey": "like",
+                "position": "inside",
+                "angle": 90
+              }
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "dataKey": "dislike",
+          "fill": "red",
+          "children": [
+            {
+              "labelList": {
+                "position": "inside",
+                "dataKey": "dislike",
+                "angle": 90
+              }
+            }
+          ]
+        }
+      ],
+      "data": [
+        {
+          "day": 1,
+          "like": 4000,
+          "dislike": 2400
+        },
+        {
+          "day": 1,
+          "like": 3000,
+          "dislike": 1398
+        },
+        {
+          "day": 3,
+          "like": 2000,
+          "dislike": 9800
+        },
+        {
+          "day": 4,
+          "like": 2780,
+          "dislike": 3908
+        },
+        {
+          "day": 5,
+          "like": 1890,
+          "dislike": 4800
+        },
+        {
+          "day": 6,
+          "like": 2390,
+          "dislike": 3800
+        },
+        {
+          "day": 7,
+          "like": 3490,
+          "dislike": 4300
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "LineChart",
+      "type": "LineChart",
+      "hide": false,
+      "toolTip": true,
+      "cartesianGrid": {
+        "strokeDasharray": "3 3"
+      },
+      "xAxis": {
+        "dataKey": "day",
+        "label": {
+          "value": "Days",
+          "position": "insideBottomRight",
+          "offset": 4
+        }
+      },
+      "yAxis": {
+        "label": {
+          "value": "Number of likes/dislikes",
+          "angle": -90,
+          "position": "insideBottomLeft"
+        }
+      },
+      "legend": {
+        "align": "left",
+        "verticalAlign": "middle",
+        "layout": "vertical"
+      },
+      "lines": [
+        {
+          "id": "1",
+          "dataKey": "like",
+          "type": "basis"
+        },
+        {
+          "id": "2",
+          "dataKey": "dislike",
+          "stroke": "#82ca9d",
+          "type": "step",
+          "children": [
+            {
+              "labelList": {
+                "dataKey": "dislike",
+                "position": "top"
+              }
+            }
+          ]
+        }
+      ],
+      "data": [
+        {
+          "day": 1,
+          "like": 4000,
+          "dislike": 2400
+        },
+        {
+          "day": 1,
+          "like": 3000,
+          "dislike": 1398
+        },
+        {
+          "day": 3,
+          "like": 2000,
+          "dislike": 9800
+        },
+        {
+          "day": 4,
+          "like": 2780,
+          "dislike": 3908
+        },
+        {
+          "day": 5,
+          "like": 1890,
+          "dislike": 4800
+        },
+        {
+          "day": 6,
+          "like": 2390,
+          "dislike": 3800
+        },
+        {
+          "day": 7,
+          "like": 3490,
+          "dislike": 4300
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "PieChart",
+      "type": "PieChart",
+      "hide": false,
+      "margin": {
+        "top": 7,
+        "bottom": 7
+      },
+      "pies": [
+        {
+          "id": "1",
+          "data": [
+            {
+              "name": "Group A",
+              "value": 400
+            },
+            {
+              "name": "Group B",
+              "value": 300
+            },
+            {
+              "name": "Group C",
+              "value": 300
+            },
+            {
+              "name": "Group D",
+              "value": 200
+            },
+            {
+              "name": "Group E",
+              "value": 278
+            },
+            {
+              "name": "Group F",
+              "value": 189
+            }
+          ],
+          "dataKey": "value",
+          "nameKey": "name",
+          "cx": "50%",
+          "cy": "50%",
+          "outerRadius": 50,
+          "fill": "#8884d8"
+        },
+        {
+          "id": "2",
+          "data": [
+            {
+              "name": "Group A",
+              "value": 2400
+            },
+            {
+              "name": "Group B",
+              "value": 4567
+            },
+            {
+              "name": "Group C",
+              "value": 1398
+            },
+            {
+              "name": "Group D",
+              "value": 9800
+            },
+            {
+              "name": "Group E",
+              "value": 3908
+            },
+            {
+              "name": "Group F",
+              "value": 4800
+            }
+          ],
+          "dataKey": "value",
+          "nameKey": "name",
+          "cx": "50%",
+          "cy": "50%",
+          "innerRadius": 60,
+          "outerRadius": 70,
+          "fill": "#82ca9d",
+          "label": true
+        }
+      ]
+    }
+  ]
+}
