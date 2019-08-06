@@ -20,9 +20,9 @@ class SideBar extends React.Component {
             {incomingCharts.map(chart => (
               <div key={chart.id} className="line">
                 {chart.name}
-                <button className="btn" onClick={handleToggleChart(chart.id)}>{`${
-                  chart.hide ? 'Show' : 'Hide'
-                }`}</button>
+                <button className="btn" onClick={handleToggleChart(chart.id)}>
+                  {`${chart.hide ? 'Show' : 'Hide'}`}
+                </button>
               </div>
             ))}
           </div>
