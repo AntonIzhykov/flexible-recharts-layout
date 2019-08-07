@@ -28,9 +28,9 @@ export default class ComposedBuilder extends Component {
       toolTip,
       legend,
       brush,
-      areas,
-      bars,
-      lines
+      area,
+      bar,
+      line
     } = this.props;
     return (
       <ComposedChart {...this.props}>
@@ -43,30 +43,21 @@ export default class ComposedBuilder extends Component {
         {toolTip && <Tooltip {...toolTip} />}
         {legend && <Legend {...legend} />}
         {brush && <Brush {...brush} />}
-        {areas &&
-          areas.map((area, index) => {
-            return (
-              <Area key={index} {...area}>
-                {area.children && area.children.map((child, index) => buildChildren(child, index))}
-              </Area>
-            );
-          })}
-        {bars &&
-          bars.map((bar, index) => {
-            return (
-              <Bar key={index} {...bar}>
-                {bar.children && bar.children.map((child, index) => buildChildren(child, index))}
-              </Bar>
-            );
-          })}
-        {lines &&
-          lines.map((line, index) => {
-            return (
-              <Line key={index} {...line}>
-                {line.children && line.children.map((child, index) => buildChildren(child, index))}
-              </Line>
-            );
-          })}
+        {area && (
+          <Area key={area.id} {...area}>
+            {area.children && area.children.map((child, index) => buildChildren(child, index))}
+          </Area>
+        )}
+        {bar && (
+          <Bar key={bar.id} {...bar}>
+            {bar.children && bar.children.map((child, index) => buildChildren(child, index))}
+          </Bar>
+        )}
+        {line && (
+          <Line key={line.id} {...line}>
+            {line.children && line.children.map((child, index) => buildChildren(child, index))}
+          </Line>
+        )}
       </ComposedChart>
     );
   }
