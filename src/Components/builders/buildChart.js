@@ -3,6 +3,7 @@ import {
   AreaBuilder,
   BarBuilder,
   ComposedBuilder,
+  FunnelBuilder,
   LineBuilder,
   PieBuilder,
   RadarBuilder,
@@ -21,6 +22,9 @@ export function buildChart(chart) {
 
     case 'ComposedChart':
       return <ComposedBuilder {...chart} />;
+
+    case 'FunnelChart':
+      return <FunnelBuilder {...chart} />;
 
     case 'LineChart':
       return <LineBuilder {...chart} />;

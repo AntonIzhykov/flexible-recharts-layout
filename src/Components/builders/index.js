@@ -1,6 +1,7 @@
 import AreaBuilder from './AreaBuilder';
 import BarBuilder from './BarBuilder';
 import ComposedBuilder from './ComposedBuilder';
+import FunnelBuilder from './FunnelBuilder';
 import LineBuilder from './LineBuilder';
 import PieBuilder from './PieBuilder';
 import RadarBuilder from './RadarBuilder';
@@ -15,6 +16,7 @@ export {
   AreaBuilder,
   BarBuilder,
   ComposedBuilder,
+  FunnelBuilder,
   LineBuilder,
   PieBuilder,
   RadarBuilder,
