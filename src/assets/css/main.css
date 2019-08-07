@@ -14894,7 +14894,7 @@ body {
   font-size: 0.875rem;
   border: none;
   background-color: #e5e9f0; }
-  .btn:hover, .btn:active {
+  .btn:active {
     color: white; }
   .btn:hover {
     background-color: #343434; }
@@ -14957,7 +14957,7 @@ body {
   font-size: 0.875rem;
   border: none;
   background-color: #e5e9f0; }
-  .btn:hover, .btn:active {
+  .btn:active {
     color: white; }
   .btn:hover {
     background-color: #343434; }
@@ -15047,13 +15047,16 @@ body {
   .sidebar-wrapper .sidebar-label {
     z-index: 1;
     margin: 0;
-    position: absolute;
+    position: fixed;
     top: 5px;
     left: 5px;
     width: 60px;
     padding: 5px;
+    opacity: 0.5;
     background: #e5e9f0;
     cursor: pointer; }
+    .sidebar-wrapper .sidebar-label:hover {
+      opacity: 1; }
     .sidebar-wrapper .sidebar-label .label-text {
       text-transform: uppercase;
       display: block; }
