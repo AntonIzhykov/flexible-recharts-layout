@@ -3,6 +3,8 @@ import { Treemap } from 'recharts';
 
 export default class TreemapBuilder extends Component {
   render() {
-    return <Treemap {...this.props} />;
+    const treemapProps = { ...this.props };
+    delete treemapProps.type;
+    return <Treemap {...treemapProps} />;
   }
 }
