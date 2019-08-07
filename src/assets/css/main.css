@@ -14894,7 +14894,7 @@ body {
   font-size: 0.875rem;
   border: none;
   background-color: #e5e9f0; }
-  .btn:active {
+  .btn:hover, .btn:active {
     color: white; }
   .btn:hover {
     background-color: #343434; }
@@ -14957,7 +14957,7 @@ body {
   font-size: 0.875rem;
   border: none;
   background-color: #e5e9f0; }
-  .btn:active {
+  .btn:hover, .btn:active {
     color: white; }
   .btn:hover {
     background-color: #343434; }
